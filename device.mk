@@ -22,3 +22,10 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/zerofltexx/overlay
 
 # Inherit from zero-common
 $(call inherit-product, device/samsung/zero-common/zero-common.mk)
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.baseband.rc \
+    init.carrier.rc \
+    init.samsungexynos7420.rc \
+    ueventd.samsungexynos7420.rc
